@@ -1,0 +1,9 @@
+version: '2'
+services:
+  jupiter:
+    build: ./docker
+    volumes:
+      - ./notebooks:/notebooks
+    ports:
+      - "127.0.0.1:5022:22"
+      - "127.0.0.1:4545:4545"
